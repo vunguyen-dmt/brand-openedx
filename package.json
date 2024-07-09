@@ -17,5 +17,11 @@
   },
   "scripts": {
     "postinstall": "node postinstall.js"
+  },
+  "release": {
+    "tagFormat": "indigo-${version}",
+    "branches": [
+      "redwood/indigo"
+    ]
   }
 }
