@@ -57,6 +57,9 @@
         &.complete {
             color: $success;
         }
+        &.active::after {
+            background: $primary;
+        }
     }
 }
 
@@ -93,3 +96,18 @@
     }
 }
 
+#root {
+    nav[aria-label=breadcrumb] {
+        background: $primary-light;
+        ol {
+            li {
+                font-size: 14px;
+                line-height: 20px;
+                a {
+                    color: $text-color-primary !important;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

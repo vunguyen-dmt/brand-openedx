@@ -1458,3 +1458,22 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
 .donut-chart-text {
     fill: $primary-500;
 }
+
+.theme-toggle-button{
+    .light-theme-icon > span, .dark-theme-icon > span{
+        color: $text-color-primary;
+    }
+    .toggle-switch {
+        .switch {
+            /* The slider */
+            .slider {
+                background-color: #ccc;
+                box-shadow: 0 0 1px #ccc;
+                &::before{
+                    transform: translateX(19px);
+                    background-color: $text-color-primary;
+                }
+            }
+        }
+    }
+}

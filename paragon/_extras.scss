@@ -2,82 +2,65 @@
 
 .theme-toggle-button{
     position: relative;
-    width: 40px;
-    height: 40px;
-}
+    display: flex;
+    align-items: center;
 
-#darkmode {
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  margin: auto !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: scale(1.5);
-}
+    .light-theme-icon > span, .dark-theme-icon > span{
+        width: 18px;
+        color: $primary;
+    }
 
-.darkmode_icon {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: $warning-400;
-  transform-origin: center center;
-  transition: transform 0.75s ease-in-out, $page-color-transition;
+    .toggle-switch {
+        display: flex;
+        margin: 0 2px;
 
-  &::after {
-    position: absolute;
-    content: '';
-    width: 16px;
-    height: 16px;
-    left: 6px;
-    bottom: 4px;
-    border-radius: 10px;
-    background: $body-bg;
-    transform-origin: center center;
-    transition: transform 0.2s ease, left 0.25s ease, bottom 0.25s ease, $page-color-transition;
-  }
+        label {
+            margin: 0
+        }
 
-  .ray {
-    position: absolute;
-    left: 7px;
-    top: 7px;
-    width: 6px;
-    height: 6px;
-    border-radius: 6px;
-    background: transparent;
-    transform-origin: center;
-    transition: transform 0.5s ease-in-out, $page-color-transition;
+/* The switch - the box around the slider */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 45px;
+            height: 24px;
 
-    &:nth-child(1) {
-        transform: rotate(45deg) translateX(0);
+            /* Hide default HTML checkbox */
+            input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #AEC7F6;
+                transition: .4s;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    height: 20px;
+                    width: 20px;
+                    left: 3px;
+                    bottom: 2px;
+                    background-color: white;
+                    transition: .4s;
+                }
+
+                &.round{
+                    border-radius: 34px;
+                    &::before{
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
     }
-    &:nth-child(2) {
-        transform: rotate(90deg) translateX(0);
-    }
-    &:nth-child(3) {
-        transform: rotate(135deg) translateX(0);
-    }
-    &:nth-child(4) {
-        transform: rotate(180deg) translateX(0);
-    }
-    &:nth-child(5) {
-        transform: rotate(225deg) translateX(0);
-    }
-    &:nth-child(6) {
-        transform: rotate(270deg) translateX(0);
-    }
-    &:nth-child(7) {
-        transform: rotate(315deg) translateX(0);
-    }
-    &:nth-child(8) {
-        transform: rotate(360deg) translateX(0);
-    }
-  }
 }
