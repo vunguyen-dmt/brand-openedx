@@ -456,6 +456,21 @@ html {
         }
     }
 }
+
+//_________________________________________
+//fix login page does not show logo.
+a.standalone-link:has(.logo) {
+    display: block!important;
+    .logo {
+        width: 180px!important;
+    }
+}
+//hide footer powered-area
+.powered-area {
+    display: none!important;
+}
+//_________________________________________
+
 @import "./header";
 @import "./footer";
 @import "./login";
