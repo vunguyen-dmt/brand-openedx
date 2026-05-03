@@ -10,7 +10,7 @@ build-tokens:
 	paragon build-tokens --source ./paragon/tokens/ --build-dir ./paragon/build -t light
 
 build-scss: dist
-	paragon build-scss --corePath ./paragon/core.scss --themesPath ./paragon/build/themes --source
+	paragon build-scss --corePath ./paragon/core.scss --themesPath ./paragon/build/themes
 
 clean:
 	rm -rf dist paragon/build

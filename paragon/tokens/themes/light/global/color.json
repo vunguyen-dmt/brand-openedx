@@ -1,0 +1,55 @@
+{
+  "color": {
+    "$type": "color",
+    "primary": {
+      "base": {
+        "source": "$primary",
+        "$value": "#3366cc",
+        "$description": "Basic primary color."
+      },
+      "100": {
+        "source": "$primary-100",
+        "$value": "#d6e4f7"
+      },
+      "200": {
+        "source": "$primary-200",
+        "$value": "#adc8ef"
+      },
+      "300": {
+        "source": "$primary-300",
+        "$value": "#7aa3e0"
+      },
+      "400": {
+        "source": "$primary-400",
+        "$value": "#4d85d9"
+      },
+      "500": {
+        "source": "$primary-500",
+        "$value": "#3366cc"
+      },
+      "600": {
+        "source": "$primary-600",
+        "$value": "#2952a3"
+      },
+      "700": {
+        "source": "$primary-700",
+        "$value": "#1f3d7a"
+      }
+    },
+    "brand": {
+      "base": {
+        "source": "$brand",
+        "$value": "#cc3333",
+        "$description": "Basic brand color."
+      },
+      "500": {
+        "source": "$brand-500",
+        "$value": "#cc3333"
+      },
+      "700": {
+        "source": "$brand-700",
+        "$value": "#7a1f1f"
+      }
+    }
+  }
+}
