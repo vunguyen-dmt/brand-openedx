@@ -665,3 +665,12 @@
   --pgn-typography-form-control-file-font-weight: var(--pgn-typography-form-input-font-weight);
   --pgn-size-form-control-select-height-lg: var(--pgn-size-form-input-height-lg);
 }
+.sequence-navigation > .btn {
+  border-radius: 0 !important;
+}
+.header-navigations > button:not(:last-child) {
+  margin-right: 8px;
+}
+#courseTabsNavigation .header-action-bar .nav-link {
+  border-radius: 0 !important;
+}
